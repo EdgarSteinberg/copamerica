@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prode</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>Copa America 2024 Fizztur</h1>
+    <form id="prodeForm">
+        <div class="group">
+            <div class="match">
+                <p>21:00 - 20/6 - Argentina vs. Canadá (Grupo A)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/ar.svg" alt="Argentina" class="flag">
+                    <input type="number" id="argentinaResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="canadaResult" min="0">
+                    <img src="https://flagcdn.com/ca.svg" alt="Canadá" class="flag">
+                </div>
+            </div>
+            <div class="match">
+                <p>21:00 - 21/6 - Chile vs. Perú (Grupo A)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/cl.svg" alt="Chile" class="flag">
+                    <input type="number" id="chileResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="peruResult" min="0">
+                    <img src="https://flagcdn.com/pe.svg" alt="Perú" class="flag">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="match">
+                <p>19:00 - 22/6 - Ecuador vs. Venezuela (Grupo B)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/ec.svg" alt="Ecuador" class="flag">
+                    <input type="number" id="ecuadorResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="venezuelaResult" min="0">
+                    <img src="https://flagcdn.com/ve.svg" alt="Venezuela" class="flag">
+                </div>
+            </div>
+            <div class="match">
+                <p>22:00 - 22/6 - México vs. Jamaica (Grupo B)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/mx.svg" alt="México" class="flag">
+                    <input type="number" id="mexicoResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="jamaicaResult" min="0">
+                    <img src="https://flagcdn.com/jm.svg" alt="Jamaica" class="flag">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="match">
+                <p>19:00 - 23/6 - Estados Unidos vs. Bolivia (Grupo C)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/us.svg" alt="Estados Unidos" class="flag">
+                    <input type="number" id="estadosUnidosResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="boliviaResult" min="0">
+                    <img src="https://flagcdn.com/bo.svg" alt="Bolivia" class="flag">
+                </div>
+            </div>
+            <div class="match">
+                <p>22:00 - 23/6 - Uruguay vs. Panamá (Grupo C)</p>
+                <div class="team">
+                    <img src="https://flagcdn.com/uy.svg" alt="Uruguay" class="flag">
+                    <input type="number" id="uruguayResult" min="0">
+                    <span>vs</span>
+                    <input type="number" id="panamaResult" min="0">
+                    <img src="https://flagcdn.com/pa.svg" alt="Panamá" class="flag">
+                </div>
+            </div>
+        </div>
+      <div class="group">
+        <div class="match">
+            <p>19:00 - 24/6 - Colombia vs. Paraguay (Grupo D)</p>
+            <div class="team">
+                <img src="https://flagcdn.com/co.svg" alt="Colombia" class="flag">
+                <input type="number" id="colombiaResult" min="0">
+                <span>vs</span>
+                <input type="number" id="paraguayResult" min="0">
+                <img src="https://flagcdn.com/py.svg" alt="Paraguay" class="flag">
+            </div>
+        </div>
+        <div class="match">
+            <p>22:00 - 24/6 - Brasil vs. Costa Rica (Grupo D)</p>
+            <div class="team">
+                <img src="https://flagcdn.com/br.svg" alt="Brasil" class="flag">
+                <input type="number" id="brasilResult" min="0">
+                <span>vs</span>
+                <input type="number" id="costaRicaResult" min="0">
+                <img src="https://flagcdn.com/cr.svg" alt="Costa Rica" class="flag">
+            </div>
+        </div>
+      </div>
+        <button type="button" onclick="submitProde()">Enviar Pronósticos</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
