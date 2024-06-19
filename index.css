@@ -9,6 +9,9 @@ body {
 h1 {
     text-align: center;
 }
+.nombre {
+    text-align: center;
+}
 
 form {
     max-width: 100%;
@@ -18,8 +21,9 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-wrap: wrap;
+    
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .group {
@@ -28,14 +32,15 @@ form {
 }
 
 .match {
+    text-align: center;
     margin-bottom: 20px;
-    width: calc(50% - 10px); /* Ancho del 50% con espacio entre elementos */
+    width: 100%
 }
 
-.team {
+/* .team {
     display: flex;
     align-items: center;
-}
+} */
 
 .flag {
     width: 30px;
@@ -43,11 +48,17 @@ form {
     margin: 0 10px;
 }
 
+input[type="text"]{
+    padding: 5px;
+    border-radius: 7px;
+}
+
 input[type="number"] {
     width: 50px;
     padding: 5px;
     font-size: 16px;
     text-align: center;
+    border-radius: 7px;
 }
 
 button {
