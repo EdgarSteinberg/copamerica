@@ -1,5 +1,6 @@
 // Función para procesar y mostrar los resultados del prode
 function submitProde() {
+    const nombre = document.getElementById('name').value;
     // Definir estructura de partidos y resultados
     const partidos = [
         { equipo1: 'Argentina', equipo2: 'Canadá', resultado1: document.getElementById('argentinaResult').value, resultado2: document.getElementById('canadaResult').value },
@@ -12,9 +13,16 @@ function submitProde() {
         { equipo1: 'Brasil', equipo2: 'Costa Rica', resultado1: document.getElementById('brasilResult').value, resultado2: document.getElementById('costaRicaResult').value }
     ];
 
+
+
     // Mostrar resultados en el contenedor #results
     const resultsContainer = document.getElementById('results');
     resultsContainer.innerHTML = ''; // Limpiar contenido anterior si hay alguno
+
+    // Mostrar nombre del usuario
+    const nombreElement = document.createElement('p');
+    nombreElement.textContent = `Nombre: ${nombre}`;
+    resultsContainer.appendChild(nombreElement);
 
     partidos.forEach(partido => {
         const resultadoPartido = document.createElement('p');
