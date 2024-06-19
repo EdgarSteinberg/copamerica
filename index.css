@@ -18,12 +18,13 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .group {
     display: flex;
-    flex-wrap: wrap; /* Permite que los grupos se ajusten a la pantalla */
-    gap: 20px; /* Espacio entre grupos */
+
 }
 
 .match {
@@ -74,4 +75,14 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 750px) {
+    .group {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    }
+
+    .match {
+        width: 100%; /* Cambia el ancho de los elementos a 100% para ocupar toda la columna */
+    }
 }
