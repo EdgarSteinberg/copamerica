@@ -11,18 +11,24 @@ h1 {
 }
 
 form {
-    max-width: 600px;
+    max-width: 100%;
+    width: 600px; /* Ancho máximo del formulario */
     margin: auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.group{
+
+.group {
     display: flex;
+    flex-wrap: wrap; /* Permite que los grupos se ajusten a la pantalla */
+    gap: 20px; /* Espacio entre grupos */
 }
+
 .match {
     margin-bottom: 20px;
+    width: calc(50% - 10px); /* Ancho del 50% con espacio entre elementos */
 }
 
 .team {
@@ -53,6 +59,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px; /* Espacio entre el formulario y el botón */
 }
 
 button:hover {
@@ -60,7 +67,8 @@ button:hover {
 }
 
 #results {
-    max-width: 600px;
+    max-width: 100%;
+    width: 600px; /* Ancho máximo del contenedor de resultados */
     margin: 20px auto;
     background-color: white;
     padding: 20px;
