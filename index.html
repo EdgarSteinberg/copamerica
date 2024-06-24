@@ -10,12 +10,17 @@
 
 <body>
     <h1>Copa America 2024 Fizztur</h1>
+    <!-- <h1>Jugadores</h1> -->
+    <div class="jugador" id="jugadores"></div>
     <form id="prodeForm">
         <div class="nombre">
             <label for="nombre">Nombre</label>
             <input type="text" id="name" placeholder="Ingrese su nombre">
         </div>
-        
+        <div class="campeon">
+            <label for="campeon">Campeón</label>
+            <input type="text" id="campeon" placeholder="Ingrese el pais campeon">
+        </div>
         <div id="matchesContainer"></div>
         
         <button type="button" onclick="submitProde()">Enviar Pronósticos</button>

@@ -1,27 +1,70 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0, auto;
     padding: 20px;
     background-color: #f0f0f0;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* Opción 1: Roboto como fuente principal */
+
 }
+
+p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.jugador {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.jugadores {
+    margin: 3px;
+
+}
+
 .nombre {
     text-align: center;
+
+}
+
+.campeon {
+    text-align: center;
+}
+
+.participant-img {
+    width: 50px;
+    /* Define el ancho de la imagen */
+    height: 50px;
+    /* Define la altura de la imagen */
+    margin: 0 auto;
+    /* Opcional: puedes agregar más estilos como borde, margen, etc. */
+    border-radius: 50%;
+    /* Ejemplo de estilo adicional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
     max-width: 100%;
-    width: 600px; /* Ancho máximo del formulario */
+    width: 600px;
+    /* Ancho máximo del formulario */
     margin: auto;
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
     /* display: flex;
     flex-wrap: wrap; */
 }
@@ -48,8 +91,9 @@ form {
     margin: 0 10px;
 }
 
-input[type="text"]{
+input[type="text"] {
     padding: 5px;
+    margin-top: 5px;
     border-radius: 7px;
 }
 
@@ -71,7 +115,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px; /* Espacio entre el formulario y el botón */
+    margin-top: 20px;
+    /* Espacio entre el formulario y el botón */
 }
 
 button:hover {
@@ -80,20 +125,55 @@ button:hover {
 
 #results {
     max-width: 100%;
-    width: 600px; /* Ancho máximo del contenedor de resultados */
-    margin: 20px auto;
+    width: 600px;
+    /* Ancho máximo del contenedor de resultados */
+    margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-top: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 750px) {
     .group {
-        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
     }
 
     .match {
-        width: 100%; /* Cambia el ancho de los elementos a 100% para ocupar toda la columna */
+        width: 100%;
+        /* Cambia el ancho de los elementos a 100% para ocupar toda la columna */
+    }
+
+    form {
+        max-width: 100%;
+        width: 600px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 5px;
+        background-color: #f0f0f0;
+    }
+
+    #results {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        /* padding: 20px; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 25px;
     }
 }
