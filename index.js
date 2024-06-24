@@ -55,34 +55,15 @@ const partidos = [
 ];
 
 const participantes = [
-    {
-        nombre: 'Tincho',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'Memeito',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'Marto',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'Sucio Can',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'K K K BEZA',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'Cagavedgar',
-        img: './img/aguara.jpg'
-    },
-    {
-        nombre: 'El Negro73',
-        img: './img/aguara.jpg'
-    }
+    { nombre: 'Tincho', img: './img/tin.png' },
+    { nombre: 'Memeito', img: './img/memeito.png' },
+    { nombre: 'Marto', img: './img/marto.png' },
+    { nombre: 'Sucio Can', img: './img/sergi.png' },
+    { nombre: 'K K K BEZA', img: './img/kbeza.png' },
+    { nombre: 'Cagavedgar', img: './img/gon.png' },
+    { nombre: 'El Negro73', img: './img/negro.png' },
+    { nombre: 'El Sultan', img: './img/sultan.png' },
+    { nombre: 'Solo Voy', img: './img/gallin.png' }
 ]
 
 // Función para generar los partidos dinámicamente
