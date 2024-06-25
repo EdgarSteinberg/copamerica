@@ -55,15 +55,15 @@ const partidos = [
 ];
 
 const participantes = [
-    { nombre: 'Tincho', img: './img/tin.png' },
-    { nombre: 'Memeito', img: './img/memeito.png' },
-    { nombre: 'Marto', img: './img/marto.png' },
-    { nombre: 'Sucio Can', img: './img/sergi.png' },
-    { nombre: 'K K K BEZA', img: './img/kbeza.png' },
-    { nombre: 'Cagavedgar', img: './img/gon.png' },
-    { nombre: 'El Negro73', img: './img/negro.png' },
-    { nombre: 'El Sultan', img: './img/sultan.png' },
-    { nombre: 'Solo Voy', img: './img/gallin.png' }
+    { nombre: 'Memeito', puntos: 9, img: './img/memeito.png' },
+    { nombre: 'Marto', puntos: 6, img: './img/marto.png' },
+    { nombre: 'El Negro73', puntos: 6, img: './img/negro.png' },
+    { nombre: 'Sucio Can', puntos: 3, img: './img/sergi.png' },
+    { nombre: 'Cagavedgar', puntos: 3, img: './img/gon.png' },
+    { nombre: 'Tincho', puntos: 0, img: './img/tin.png' },
+    { nombre: 'K K K BEZA', puntos: 0, img: './img/kbeza.png' },
+    { nombre: 'El Sultan', puntos: -1, img: './img/sultan.png' },
+    { nombre: 'Solo Voy', puntos: -1, img: './img/gallin.png' }
 ]
 
 // Función para generar los partidos dinámicamente
@@ -137,9 +137,32 @@ participantes.forEach(jugador => {
     jugadorDiv.classList.add('jugadores')
     jugadorDiv.innerHTML = `
         <p>${jugador.nombre}</p>
+        <p>puntos: ${jugador.puntos}</p>
         <img src=${jugador.img} alt=${jugador.nombre} class="participant-img">
     `
 
     jugadoresContainer.appendChild(jugadorDiv)
 })
 //mongodb://host.docker.internal:27017/coder_53120
+
+// CaaS (Container as a service): EKS (Amazon), GKE (Google), AKS (Azure), Openshift (Redhat)
+
+// Otros Proveedores: Digital Ocean, Linode.
+
+// https://kubernetes.io/
+
+// 	- https://kubernetes.io/docs/tasks/tools/
+
+// 	- https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+// 	- https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
+
+// curl.exe -LO "https://dl.k8s.io/release/v1.30.0/bin/windows/amd64/kubectl.exe"
+
+//https://chocolatey.org/install
+
+//curl.exe -LO "https://dl.k8s.io/release/v1.30.0/bin/windows/amd64/kubectl.exe"
+
+//https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started
+
+//https://it-tools.tech/
