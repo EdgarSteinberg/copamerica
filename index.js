@@ -43,21 +43,32 @@ const partidos = [
     { fecha: '22:00 - 24/6', grupo: 'Grupo D', equipo1: { nombre: 'Brasil', bandera: 'https://flagcdn.com/br.svg' }, equipo2: { nombre: 'Costa Rica', bandera: 'https://flagcdn.com/cr.svg' } }
 ];
 **/
+// const partidos = [
+//     { fecha: '19:00 - 25/6', grupo: 'Grupo A', equipo1: { nombre: 'Perú', bandera: 'https://flagcdn.com/pe.svg' }, equipo2: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' } },
+//     { fecha: '22:00 - 25/6', grupo: 'Grupo A', equipo1: { nombre: 'Chile', bandera: 'https://flagcdn.com/cl.svg' }, equipo2: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' } },
+//     { fecha: '19:00 - 26/6', grupo: 'Grupo B', equipo1: { nombre: 'Ecuador', bandera: 'https://flagcdn.com/ec.svg' }, equipo2: { nombre: 'Jamaica', bandera: 'https://flagcdn.com/jm.svg' } },
+//     { fecha: '22:00 - 26/6', grupo: 'Grupo B', equipo1: { nombre: 'Venezuela', bandera: 'https://flagcdn.com/ve.svg' }, equipo2: { nombre: 'México', bandera: 'https://flagcdn.com/mx.svg' } },
+//     { fecha: '19:00 - 27/6', grupo: 'Grupo C', equipo1: { nombre: 'Panamá', bandera: 'https://flagcdn.com/pa.svg' }, equipo2: { nombre: 'Estados Unidos', bandera: 'https://flagcdn.com/us.svg' } },
+//     { fecha: '22:00 - 27/6', grupo: 'Grupo C', equipo1: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' }, equipo2: { nombre: 'Bolivia', bandera: 'https://flagcdn.com/bo.svg' } },
+//     { fecha: '19:00 - 28/6', grupo: 'Grupo D', equipo1: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' }, equipo2: { nombre: 'Costa Rica', bandera: 'https://flagcdn.com/cr.svg' } },
+//     { fecha: '22:00 - 28/6', grupo: 'Grupo D', equipo1: { nombre: 'Paraguay', bandera: 'https://flagcdn.com/py.svg' }, equipo2: { nombre: 'Brasil', bandera: 'https://flagcdn.com/br.svg' } }
+// ];
+
 const partidos = [
-    { fecha: '19:00 - 25/6', grupo: 'Grupo A', equipo1: { nombre: 'Perú', bandera: 'https://flagcdn.com/pe.svg' }, equipo2: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' } },
-    { fecha: '22:00 - 25/6', grupo: 'Grupo A', equipo1: { nombre: 'Chile', bandera: 'https://flagcdn.com/cl.svg' }, equipo2: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' } },
-    { fecha: '19:00 - 26/6', grupo: 'Grupo B', equipo1: { nombre: 'Ecuador', bandera: 'https://flagcdn.com/ec.svg' }, equipo2: { nombre: 'Jamaica', bandera: 'https://flagcdn.com/jm.svg' } },
-    { fecha: '22:00 - 26/6', grupo: 'Grupo B', equipo1: { nombre: 'Venezuela', bandera: 'https://flagcdn.com/ve.svg' }, equipo2: { nombre: 'México', bandera: 'https://flagcdn.com/mx.svg' } },
-    { fecha: '19:00 - 27/6', grupo: 'Grupo C', equipo1: { nombre: 'Panamá', bandera: 'https://flagcdn.com/pa.svg' }, equipo2: { nombre: 'Estados Unidos', bandera: 'https://flagcdn.com/us.svg' } },
-    { fecha: '22:00 - 27/6', grupo: 'Grupo C', equipo1: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' }, equipo2: { nombre: 'Bolivia', bandera: 'https://flagcdn.com/bo.svg' } },
-    { fecha: '19:00 - 28/6', grupo: 'Grupo D', equipo1: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' }, equipo2: { nombre: 'Costa Rica', bandera: 'https://flagcdn.com/cr.svg' } },
-    { fecha: '22:00 - 28/6', grupo: 'Grupo D', equipo1: { nombre: 'Paraguay', bandera: 'https://flagcdn.com/py.svg' }, equipo2: { nombre: 'Brasil', bandera: 'https://flagcdn.com/br.svg' } }
-];
+    { fecha: '21:00 - 29/6', grupo: 'Grupo A', equipo1: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' }, equipo2: { nombre: 'Perú', bandera: 'https://flagcdn.com/pe.svg' } },
+    { fecha: '21:00 - 29/6', grupo: 'Grupo A', equipo1: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' }, equipo2: { nombre: 'Chile', bandera: 'https://flagcdn.com/cl.svg' } },
+    { fecha: '21:00 - 30/6', grupo: 'Grupo B', equipo1: { nombre: 'México', bandera: 'https://flagcdn.com/mx.svg' }, equipo2: { nombre: 'Ecuador', bandera: 'https://flagcdn.com/ec.svg' } },
+    { fecha: '21:00 - 30/6', grupo: 'Grupo B', equipo1: { nombre: 'Jamaica', bandera: 'https://flagcdn.com/jm.svg' }, equipo2: { nombre: 'Venezuela', bandera: 'https://flagcdn.com/ve.svg' } },
+    { fecha: '22:00 - 1/7', grupo: 'Grupo C', equipo1: { nombre: 'Bolivia', bandera: 'https://flagcdn.com/bo.svg' }, equipo2: { nombre: 'Panamá', bandera: 'https://flagcdn.com/pa.svg' } },
+    { fecha: '22:00 - 1/7', grupo: 'Grupo C', equipo1: { nombre: 'Estados Unidos', bandera: 'https://flagcdn.com/us.svg' }, equipo2: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' } },
+    { fecha: '22:00 - 2/7', grupo: 'Grupo D', equipo1: { nombre: 'Brasil', bandera: 'https://flagcdn.com/br.svg' }, equipo2: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' } },
+    { fecha: '22:00 - 2/7', grupo: 'Grupo D', equipo1: { nombre: 'Costa Rica', bandera: 'https://flagcdn.com/cr.svg' }, equipo2: { nombre: 'Paraguay', bandera: 'https://flagcdn.com/py.svg' } },
+]
 
 const participantes = [
     { nombre: 'Memeito', puntos: 9, img: './img/memeito.png' },
+    { nombre: 'El Negro73', puntos: 9, img: './img/negro.png' },
     { nombre: 'Marto', puntos: 6, img: './img/marto.png' },
-    { nombre: 'El Negro73', puntos: 6, img: './img/negro.png' },
     { nombre: 'Sucio Can', puntos: 3, img: './img/sergi.png' },
     { nombre: 'Cagavedgar', puntos: 3, img: './img/gon.png' },
     { nombre: 'Tincho', puntos: 0, img: './img/tin.png' },
