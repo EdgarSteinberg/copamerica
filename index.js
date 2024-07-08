@@ -66,25 +66,19 @@ const partidos = [
 // ]
 
 const partidos = [
-    { fecha: '22:00 - 4/7', equipo1: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' }, equipo2: { nombre: 'Ecuador', bandera: 'https://flagcdn.com/ec.svg' } },
-    { fecha: '22:00 - 5/7', equipo1: { nombre: 'Venezuela', bandera: 'https://flagcdn.com/ve.svg' }, equipo2: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' }, },
-    { fecha: '19:00 - 6/7', equipo1: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' }, equipo2: { nombre: 'Brasil', bandera: 'https://flagcdn.com/br.svg' }, },
-    { fecha: '22:00 - 6/7', equipo1: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' }, equipo2: { nombre: 'Panamá', bandera: 'https://flagcdn.com/pa.svg' }, },
+  { fecha: '22:00 - 4/7', equipo1: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' }, equipo2: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' } },
+  { fecha: '19:00 - 6/7', equipo1: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' }, equipo2: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' } },
+  { fecha: '16:00 - 9/7', equipo1: { nombre: 'España', bandera: "https://flagcdn.com/es.svg" }, equipo2: { nombre: 'Francia', bandera: 'https://flagcdn.com/fr.svg' } },
+  { fecha: '16:00 - 10/7', equipo1: { nombre: 'Inglaterra', bandera: "https://flagcdn.com/gb.svg" }, equipo2: { nombre: 'Holanda', bandera: 'https://flagcdn.com/nl.svg' } }
+];
 
-    { fecha: '13:00 - 5/7', equipo1: { nombre: 'España', bandera: "https://flagcdn.com/es.svg" }, equipo2: { nombre: 'Alemania', bandera: 'https://flagcdn.com/de.svg' }, },
-    { fecha: '16:00 - 5/7', equipo1: { nombre: 'Portugal', bandera: "https://flagcdn.com/pt.svg" }, equipo2: { nombre: 'Francia', bandera: 'https://flagcdn.com/fr.svg' }, },
-    { fecha: '13:00 - 6/7', equipo1: { nombre: 'Turquía', bandera: "https://flagcdn.com/tr.svg" }, equipo2: { nombre: 'Holanda', bandera: 'https://flagcdn.com/nl.svg' }, },
-    { fecha: '16:00 - 6/7', equipo1: { nombre: 'InglaterraLaConchaDeTuMadre', bandera: "https://flagcdn.com/gb.svg" }, equipo2: { nombre: 'Suiza', bandera: 'https://flagcdn.com/ch.svg' }, }
-
-
-]
 
 const participantes = [
+    { nombre: 'El Negro73', puntos: 15, img: './img/negro.png' },
     { nombre: 'Memeito', puntos: 12, img: './img/memeito.png' },
-    { nombre: 'El Negro73', puntos: 12, img: './img/negro.png' },
     { nombre: 'Marto', puntos: 9, img: './img/marto.png' },
+    { nombre: 'Tincho', puntos: 9, img: './img/tin.png' },
     { nombre: 'Sucio Can', puntos: 6, img: './img/sergi.png' },
-    { nombre: 'Tincho', puntos: 3, img: './img/tin.png' },
     { nombre: 'Cagavedgar', puntos: 3, img: './img/gon.png' },
     { nombre: 'K K K BEZA', puntos: 0, img: './img/kbeza.png' },
     { nombre: 'El Sultan', puntos: -1, img: './img/sultan.png' },
@@ -143,7 +137,7 @@ function submitProde() {
     }
 
     const campeonElement = document.createElement('p');
-    campeonElement.textContent = `Seleccion Campeona: ${campeon}`
+    campeonElement.textContent = `Goles: ${campeon}`
     resultsContainer.appendChild(campeonElement)
 
     partidos.forEach((partido, index) => {

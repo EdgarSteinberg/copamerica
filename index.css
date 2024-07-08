@@ -18,6 +18,7 @@ p {
     font-weight: bolder;
 }
 
+
 .jugador {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +94,7 @@ form {
 
 input[type="text"] {
     padding: 5px;
-    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 7px;
 }
 
