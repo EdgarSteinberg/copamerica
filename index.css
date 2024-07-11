@@ -94,7 +94,7 @@ form {
 
 input[type="text"] {
     padding: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
     border-radius: 7px;
 }
 
@@ -135,7 +135,10 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.copa{
+    display: flex;
 
+}
 @media screen and (max-width: 750px) {
     .group {
         flex-direction: column;

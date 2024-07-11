@@ -66,23 +66,18 @@ const partidos = [
 // ]
 
 const partidos = [
-  { fecha: '22:00 - 4/7', equipo1: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' }, equipo2: { nombre: 'Canadá', bandera: 'https://flagcdn.com/ca.svg' } },
-  { fecha: '19:00 - 6/7', equipo1: { nombre: 'Uruguay', bandera: 'https://flagcdn.com/uy.svg' }, equipo2: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' } },
-  { fecha: '16:00 - 9/7', equipo1: { nombre: 'España', bandera: "https://flagcdn.com/es.svg" }, equipo2: { nombre: 'Francia', bandera: 'https://flagcdn.com/fr.svg' } },
-  { fecha: '16:00 - 10/7', equipo1: { nombre: 'Inglaterra', bandera: "https://flagcdn.com/gb.svg" }, equipo2: { nombre: 'Holanda', bandera: 'https://flagcdn.com/nl.svg' } }
+    { fecha: '21:00 - 14/7', equipo1: { nombre: 'Argentina', bandera: 'https://flagcdn.com/ar.svg' }, equipo2: { nombre: 'Colombia', bandera: 'https://flagcdn.com/co.svg' } },
+    { fecha: '16:00 - 14/7', equipo1: { nombre: 'España', bandera: "https://flagcdn.com/es.svg" }, equipo2: { nombre: 'Inglaterra', bandera: "https://flagcdn.com/gb.svg" } },
+
 ];
 
-
 const participantes = [
-    { nombre: 'El Negro73', puntos: 15, img: './img/negro.png' },
-    { nombre: 'Memeito', puntos: 12, img: './img/memeito.png' },
-    { nombre: 'Marto', puntos: 9, img: './img/marto.png' },
-    { nombre: 'Tincho', puntos: 9, img: './img/tin.png' },
-    { nombre: 'Sucio Can', puntos: 6, img: './img/sergi.png' },
-    { nombre: 'Cagavedgar', puntos: 3, img: './img/gon.png' },
-    { nombre: 'K K K BEZA', puntos: 0, img: './img/kbeza.png' },
-    { nombre: 'El Sultan', puntos: -1, img: './img/sultan.png' },
-    { nombre: 'Solo Voy', puntos: -1, img: './img/gallin.png' }
+    { nombre: 'El Negro73', puntos: 21, img: './img/negro.png' },
+    { nombre: 'Sucio Can', puntos: 14, img: './img/sergi.png' },
+    { nombre: 'Tincho', puntos: 14, img: './img/tin.png' },
+    { nombre: 'Memeito', puntos: 13, img: './img/memeito.png' },
+    { nombre: 'Marto', puntos: 11, img: './img/marto.png' },
+
 ]
 
 // Función para generar los partidos dinámicamente
@@ -99,10 +94,14 @@ function generateMatches() {
             <p>${partido.fecha} - ${partido.equipo1.nombre} vs. ${partido.equipo2.nombre} </p>
             <div class="team">
                 <img src="${partido.equipo1.bandera}" alt="${partido.equipo1.nombre}" class="flag">
-                <input type="number" id="result_${index}_1" min="0" placeholder="0">
+                <input type="number" id="result_${index}_1" min="0" >
                 <span>vs</span>
-                <input type="number" id="result_${index}_2" min="0" placeholder="0">
+                <input type="number" id="result_${index}_2" min="0" >
                 <img src="${partido.equipo2.bandera}" alt="${partido.equipo2.nombre}" class="flag">
+                <br>
+                <input type="text"  id="paisCampeon_${index}" placeholder="CAMPEON">
+                <br>
+                <input type="text" id="goles_${index}" placeholder="GOLES">
             </div>
         `;
 
@@ -119,7 +118,7 @@ function submitProde() {
     const nombre = document.getElementById('name').value;
     const resultsContainer = document.getElementById('results');
 
-    const campeon = document.getElementById('campeon').value;
+    //const campeon = document.getElementById('campeon').value;
 
     resultsContainer.innerHTML = ''; // Limpiar contenido anterior si hay alguno
 
@@ -137,15 +136,22 @@ function submitProde() {
     }
 
     const campeonElement = document.createElement('p');
-    campeonElement.textContent = `Goles: ${campeon}`
+    //campeonElement.textContent = `Goles: ${campeon}`
     resultsContainer.appendChild(campeonElement)
 
     partidos.forEach((partido, index) => {
         const resultado1 = document.getElementById(`result_${index}_1`).value || 0;
         const resultado2 = document.getElementById(`result_${index}_2`).value || 0;
+        const paisCampeon = document.getElementById(`paisCampeon_${index}`).value;
+        const goles = document.getElementById(`goles_${index}`).value;
 
         const resultadoPartido = document.createElement('p');
-        resultadoPartido.textContent = `${partido.equipo1.nombre} ${resultado1} - ${resultado2} ${partido.equipo2.nombre}`;
+        //resultadoPartido.textContent = `${partido.equipo1.nombre} ${resultado1} - ${resultado2} ${partido.equipo2.nombre}`;
+        resultadoPartido.innerHTML = `
+        <p><img src="${partido.equipo1.bandera}" alt="${partido.equipo1.nombre}" class="flag"> ${resultado1} - ${resultado2} <img src="${partido.equipo2.bandera}" alt="${partido.equipo2.nombre}" class="flag"></p>
+        <p>Campeón: ${paisCampeon}</p>
+        <p>Goles: ${goles}</p>
+    `;
         resultsContainer.appendChild(resultadoPartido);
     });
 }
